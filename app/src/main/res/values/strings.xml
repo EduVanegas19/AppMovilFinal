@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">USOcial</string>
+
+    <string name="LoginBTN">LOGIN</string>
+    <string name="RegistrarBTN">Registrarme</string>
+
+
+    <!--Registro-->
+    <string name="RegistroTXT">REGISTRO</string>
+    <string name="CORREO">Escriba correo</string>
+    <string name="Password">Escriba Contrasena</string>
+    <string name="NOMBRES">Nombres Completos</string>
+    <string name="APELLIDOS">Apellidos Completos</string>
+    <string name="EDAD">Edad</string>
+    <string name="TELEFONO">Telefono</string>
+    <string name="DIRECCION">Direccion</string>
+    <string name="REGISTRARUSUARIO">REGISTRARME</string>
+
+    <!--Login-->
+    <string name="CorreoLogin">Correo Electronico</string>
+    <string name="PasswordLogin">Contrasena</string>
+    <string name="INGRESAR">LOGIN</string>
+
 </resources>

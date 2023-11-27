@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "600895127286",
+    "project_id": "usocial-65380",
+    "storage_bucket": "usocial-65380.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600895127286:android:4036e9c3232ee99e29b6d7",
+        "android_client_info": {
+          "package_name": "com.exydos.usocial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsm4bT9GY81pQW3VrGGS-IOqkUPE7qa3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
