@@ -6,6 +6,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,6 +14,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -31,6 +33,7 @@ public class Registro extends AppCompatActivity {
     EditText Correo, Password, Nombres, Apellidos, Edad, Telefono, Direccion;
     Button RegistrarUsuario;
     FirebaseAuth firebaseAuth;
+    private ProgressDialog progressDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +57,7 @@ public class Registro extends AppCompatActivity {
         RegistrarUsuario = findViewById(R.id.REGISTRARUSUARIO);
 
         firebaseAuth = FirebaseAuth.getInstance();
+        progressDialog = new ProgressDialog(Registro.this);
 
         RegistrarUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,12 +82,18 @@ public class Registro extends AppCompatActivity {
 
     /*METODO  PARA REGISTRAR UN USUARIO*/
     private void REGISTRAR(String correo, String pass) {
+        progressDialog.setTitle("Registrando");
+        progressDialog.setMessage("Espere por favor...");
+        progressDialog.setCancelable(false);
+        progressDialog.show();
         firebaseAuth.createUserWithEmailAndPassword(correo, pass)
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         /* si el registro es exitoso */
                         if (task.isSuccessful()) {
+
+                            progressDialog.dismiss();//el progress se cierra
                             FirebaseUser user = firebaseAuth.getCurrentUser();
                             //AQUI VAN LOS DATOS QUE QUEREMOS REGISTRAR
                             // DEBEMOS TOMAR EN CUENTA QUE LOS STRING DEBEN SER DIFERENTES A NUESTROS EDITTEXT
@@ -124,12 +134,14 @@ public class Registro extends AppCompatActivity {
                             //UNA VEZ QUE SE HA REGISTRADO, NOS MANDARA AL APARTADO INICIO
                             startActivity(new Intent(Registro.this, Inicio.class));
                         } else {
+                            progressDialog.dismiss();//el progress se cierra
                             Toast.makeText(Registro.this, "Algo ha salido mal", Toast.LENGTH_SHORT).show();
                         }
                     }
                 }).addOnFailureListener(new OnFailureListener(){
                         @Override
                         public void onFailure(@NonNull Exception e){
+                            progressDialog.dismiss();//el progress se cierra
                             Toast.makeText(Registro.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                         }
                 });

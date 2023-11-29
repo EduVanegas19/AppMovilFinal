@@ -20,7 +20,7 @@ public class PantallaDeCarga extends AppCompatActivity {
             @Override
             public void run() {
                 //Esto se ejecutara pasado los segundos que hemos establecido
-                Intent intent = new Intent(PantallaDeCarga.this, MainActivity.class);
+                Intent intent = new Intent(PantallaDeCarga.this, Inicio.class);
                 startActivity(intent);
                 // Esto nos dirige de esta actividad, al main activity
             }

@@ -71,6 +71,18 @@
             android:textColorHighlight="#03A9F4"
             android:textColorLink="#2196F3" />
 
+        <!--BOTON LOGIN GOOGLE-->
+        <Button
+            android:text="@string/INGRESARGOOGLE"
+            android:id="@+id/INGRESARGOOGLE"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boton_personalizado_dos"
+            android:drawableStart="@drawable/pass_ico"
+            android:drawablePadding="15dp"
+            android:padding="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

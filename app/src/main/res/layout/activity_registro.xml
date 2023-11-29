@@ -148,7 +148,7 @@
         <Button
             android:id="@+id/REGISTRARUSUARIO"
             android:text="@string/REGISTRARUSUARIO"
-            android:background="#6E6E6E"
+            android:background="@drawable/boton_personalizado"
             android:textColor="#fff"
             android:layout_marginTop="15sp"
             android:layout_width="match_parent"

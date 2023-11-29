@@ -3,6 +3,7 @@
 
     <string name="LoginBTN">LOGIN</string>
     <string name="RegistrarBTN">Registrarme</string>
+    <string name="CerrarSesion">Cerrar Sesion</string>
 
 
     <!--Registro-->
@@ -20,10 +21,11 @@
     <string name="CorreoLogin">Correo Electronico</string>
     <string name="PasswordLogin">Contrasena</string>
     <string name="INGRESAR">LOGIN</string>
+    <string name="INGRESARGOOGLE">INGRESAR CON GOOGLE</string>
 
     <!--DIAOG NO INICIO DE SESION-->
     <string name="NoInicio">No pudo iniciar sesion, intente nuevamente (Revise correo o contrasena) - Verifique conexion a internet</string>
     <string name="ok_no_inicio">ENTENDIDO</string>
-    
+    <string name="default_web_client_id">600895127286-ecgjo8e9fpohihg5ikolf2iafcclivk6.apps.googleusercontent.com</string>
 
 </resources>
