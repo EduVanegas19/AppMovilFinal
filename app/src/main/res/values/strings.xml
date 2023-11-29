@@ -21,4 +21,9 @@
     <string name="PasswordLogin">Contrasena</string>
     <string name="INGRESAR">LOGIN</string>
 
+    <!--DIAOG NO INICIO DE SESION-->
+    <string name="NoInicio">No pudo iniciar sesion, intente nuevamente (Revise correo o contrasena) - Verifique conexion a internet</string>
+    <string name="ok_no_inicio">ENTENDIDO</string>
+    
+
 </resources>

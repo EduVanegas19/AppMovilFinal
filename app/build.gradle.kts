@@ -50,4 +50,6 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.3.2")
     implementation ("androidx.cardview:cardview:1.0.0")
     implementation("com.google.firebase:firebase-storage:20.3.0")
+
+    implementation("com.airbnb.android:lottie:3.0.1")
 }
