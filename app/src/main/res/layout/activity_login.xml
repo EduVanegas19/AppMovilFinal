@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="#EFF1F2"
     tools:context=".Login">
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -24,6 +24,12 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
+        <ImageView
+            android:id="@+id/just_letters"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/just_letters" />
+
         <TextView
             android:id="@+id/IniciarSesion"
             android:text="Iniciar Sesion"
@@ -32,13 +38,6 @@
             android:layout_marginTop="110dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/user_solid"
-            app:srcCompat="@drawable/boton_personalizado" />
 
         <!--CORREO ELECTRONICO-->
         <com.google.android.material.textfield.TextInputLayout
@@ -81,26 +80,30 @@
         <!--BOTON -->
         <Button
             android:id="@+id/INGRESAR"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/boton_personalizado"
+            android:backgroundTint="#779ecb"
             android:text="@string/INGRESAR"
             android:textColor="#fff"
             android:textColorHighlight="#03A9F4"
-            android:textColorLink="#2196F3" />
+            android:textColorLink="#2196F3"
+            tools:targetApi="s" />
 
         <!--BOTON LOGIN GOOGLE-->
         <Button
-            android:text="@string/INGRESARGOOGLE"
             android:id="@+id/INGRESARGOOGLE"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/boton_personalizado_dos"
+            android:backgroundTint="@color/colorAccent"
             android:drawableStart="@drawable/google_ico"
             android:drawablePadding="5dp"
             android:padding="10dp"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"/>
+            android:text="@string/INGRESARGOOGLE" />
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="#E3E4E5"
     tools:context=".PantallaDeCarga">
 
     <include
@@ -20,19 +20,17 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/usocial"/>
-
-        <TextView
-            android:id="@+id/app_name"
-            android:text="@string/app_name"
-            android:layout_marginTop="15dp"
-            android:textSize="25sp"
-            android:textColor="#000"
-            android:textStyle="bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:src="@drawable/usocial"
+            app:srcCompat="@drawable/social_noletters" />
 
         <!--ANIMACION-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:src="@tools:sample/avatars"
+            app:srcCompat="@drawable/just_letters" />
+
         <com.airbnb.lottie.LottieAnimationView
             android:layout_marginTop="10dp"
             android:layout_width="120dp"
