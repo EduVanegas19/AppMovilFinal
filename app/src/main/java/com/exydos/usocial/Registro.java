@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
@@ -15,6 +16,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -30,6 +32,7 @@ import java.util.HashMap;
 
 public class Registro extends AppCompatActivity {
 
+    TextView Registrotxt;
     EditText Correo, Password, Nombres, Apellidos, Edad, Telefono, Direccion;
     Button RegistrarUsuario;
     FirebaseAuth firebaseAuth;
@@ -54,10 +57,13 @@ public class Registro extends AppCompatActivity {
         Edad = findViewById(R.id.EDAD);
         Telefono = findViewById(R.id.TELEFONO);
         Direccion = findViewById(R.id.DIRECCION);
+        Registrotxt = findViewById(R.id.RegistroTXT);
         RegistrarUsuario = findViewById(R.id.REGISTRARUSUARIO);
 
         firebaseAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(Registro.this);
+
+        CambioDeLetra();
 
         RegistrarUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -152,5 +158,22 @@ public class Registro extends AppCompatActivity {
     public boolean onSupportNavigateUp(){
         getSupportActionBar();
         return super.onSupportNavigateUp();
+    }
+
+    private void CambioDeLetra(){
+        //FUENTE DE LA LETRA
+        String ubicacion = "fuentes/sans_medio.ttf";
+        Typeface tf = Typeface.createFromAsset(Registro.this.getAssets(),ubicacion);
+        //FUENTE DE LA LETRA
+
+        Registrotxt.setTypeface(tf);
+        Correo.setTypeface(tf);
+        Password.setTypeface(tf);
+        Nombres.setTypeface(tf);
+        Apellidos.setTypeface(tf);
+        Edad.setTypeface(tf);
+        Telefono.setTypeface(tf);
+        Direccion.setTypeface(tf);
+        RegistrarUsuario.setTypeface(tf);
     }
 }

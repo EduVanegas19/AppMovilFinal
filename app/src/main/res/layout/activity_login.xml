@@ -14,6 +14,14 @@
         android:padding="15sp"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/IniciarSesion"
+            android:text="Iniciar Sesion"
+            android:textStyle="bold"
+            android:textSize="26dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
@@ -77,8 +85,8 @@
             android:id="@+id/INGRESARGOOGLE"
             android:layout_marginTop="10dp"
             android:background="@drawable/boton_personalizado_dos"
-            android:drawableStart="@drawable/pass_ico"
-            android:drawablePadding="15dp"
+            android:drawableStart="@drawable/google_ico"
+            android:drawablePadding="5dp"
             android:padding="10dp"
             android:layout_width="250dp"
             android:layout_height="wrap_content"/>

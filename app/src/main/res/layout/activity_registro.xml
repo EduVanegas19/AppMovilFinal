@@ -15,6 +15,7 @@
 
         <!--TITULO-->
         <TextView
+            android:id="@+id/RegistroTXT"
             android:text="@string/RegistroTXT"
             android:textStyle="bold"
             android:textSize="20sp"
@@ -29,7 +30,7 @@
             android:layout_height="100dp"
             android:layout_marginTop="10dp"
             android:layout_gravity="center"
-            android:src="@drawable/logoicono"/>
+            android:src="@drawable/usocial"/>
 
         <!--CORREO-->
         <com.google.android.material.textfield.TextInputLayout

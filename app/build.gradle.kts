@@ -53,4 +53,6 @@ dependencies {
 
     implementation("com.airbnb.android:lottie:3.0.1")
     implementation("com.google.android.gms:play-services-auth:20.7.0")
+
+    implementation ("androidx.core:core:1.12.0")
 }

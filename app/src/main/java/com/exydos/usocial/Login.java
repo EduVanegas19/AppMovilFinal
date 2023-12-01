@@ -8,12 +8,14 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -36,6 +38,7 @@ import java.util.HashMap;
 
 public class Login extends AppCompatActivity {
 
+    TextView inicioSesion;
     EditText correoLogin,passwordLogin;
     Button INGRESAR, INGRESARGOOGLE;
     private GoogleSignInClient mGoogleSignInClient;
@@ -57,6 +60,7 @@ public class Login extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
          */
 
+        inicioSesion = findViewById(R.id.IniciarSesion);
         correoLogin = findViewById(R.id.CorreoLogin);
         passwordLogin = findViewById(R.id.PasswordLogin);
         INGRESAR = findViewById(R.id.INGRESAR);
@@ -65,6 +69,8 @@ public class Login extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(Login.this); //INICIALIZAMOS EL PROGRESSDIALOG
         dialog = new Dialog(Login.this);// INICIAMOS EL DIALOG
+
+        CambioDeLetra();
 
         /* PASO 1.  CREAMOS LA SOLICITUD */
         crearSolicitud();
@@ -155,9 +161,9 @@ public class Login extends AppCompatActivity {
 
                                 DatosUsuario.put("uid", uid);
                                 DatosUsuario.put("correo", correo);
-                                //DatosUsuario.put("pass", pass); //Comentamos contrasena ya que se agregar con Google
+                                DatosUsuario.put("pass", ""); //Comentamos contrasena ya que se agregar con Google
                                 DatosUsuario.put("nombres", nombre);
-                                //DatosUsuario.put("apellidos", apellidos);
+                                DatosUsuario.put("apellidos", "");
                                 DatosUsuario.put("edad", "");
                                 DatosUsuario.put("telefono", "");
                                 DatosUsuario.put("direccion", "");
@@ -245,6 +251,19 @@ public class Login extends AppCompatActivity {
     public boolean onSupportNavigateUp(){
         getSupportActionBar();
         return super.onSupportNavigateUp();
+    }
+
+    private void CambioDeLetra(){
+        //FUENTE DE LA LETRA
+        String ubicacion = "fuentes/sans_medio.ttf";
+        Typeface tf = Typeface.createFromAsset(Login.this.getAssets(),ubicacion);
+        //FUENTE DE LA LETRA
+
+        inicioSesion.setTypeface(tf);
+        correoLogin.setTypeface(tf);
+        passwordLogin.setTypeface(tf);
+        INGRESAR.setTypeface(tf);
+        INGRESARGOOGLE.setTypeface(tf);
     }
 
     //VAMOS A CREAR UN MENSAJE PERSONALIZADO PARA CUANDO EL USUARIO NO PUEDA INICIAR SESION

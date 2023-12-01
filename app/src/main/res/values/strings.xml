@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">USOcial</string>
+    <string name="desarrolladortxt">Desarrollado por: EXYDOS</string>
 
     <string name="LoginBTN">LOGIN</string>
     <string name="RegistrarBTN">Registrarme</string>
-    <string name="CerrarSesion">Cerrar Sesion</string>
+    <string name="default_web_client_id">600895127286-ecgjo8e9fpohihg5ikolf2iafcclivk6.apps.googleusercontent.com</string>
 
 
     <!--Registro-->
@@ -26,6 +27,44 @@
     <!--DIAOG NO INICIO DE SESION-->
     <string name="NoInicio">No pudo iniciar sesion, intente nuevamente (Revise correo o contrasena) - Verifique conexion a internet</string>
     <string name="ok_no_inicio">ENTENDIDO</string>
-    <string name="default_web_client_id">600895127286-ecgjo8e9fpohihg5ikolf2iafcclivk6.apps.googleusercontent.com</string>
+
+    <!--Perfil -->
+    <string name="fecha"> -- </string>
+    <string name="uidtxt">Uid: </string>
+    <string name="uidPerfil"> -- </string>
+    <string name="correotxt">Correo: </string>
+    <string name="correoPerfil"> -- </string>
+    <string name="Bienvenidotxt">Bienvenido(a): </string>
+    <string name="nombresPerfil"> -- </string>
+
+    <!--MENU-->
+    <string name="MisDatosOpcion">Mis Datos</string>
+    <string name="CrearPublicacionOpcion">Crear Post</string>
+    <string name="PublicacionesOpcion">Publicaciones</string>
+    <string name="UsuarioOpcion">Usuarios</string>
+    <string name="ChatsOpcion">Chats</string>
+    <string name="CerrarSesion">Cerrar Sesion</string>
+
+    <!--MIS DATOS-->
+    <string name="MisDatosTXT">Mis Datos Personales</string>
+    <string name="uidDato"> -- </string>
+    <string name="NombresDato"> -- </string>
+    <string name="ApellidosDato"> -- </string>
+    <string name="CorreoDato"> -- </string>
+    <string name="PasswordDato"> -- </string>
+    <string name="EdadDato"> -- </string>
+    <string name="DireccionDato"> -- </string>
+    <string name="TelefonoDato"> -- </string>
+    <string name="uidDatoTXT">UID: </string>
+    <string name="NombresDatoTXT">NOMBRES: </string>
+    <string name="ApellidosDatoTXT">APELLIDOS: </string>
+    <string name="CorreoDatoTXT">CORREO: </string>
+    <string name="PasswordDatoTXT">PASSWORD: </string>
+    <string name="EdadDatoTXT">EDAD: </string>
+    <string name="DireccionDatoTXT">DIRECCION: </string>
+    <string name="TelefonoDatoTXT">TELEFONO: </string>
+    <string name="Actualizar">Actualizar Datos</string>
+    <string name="ActualizarPass">Actualizar Pass</string>
+
 
 </resources>

@@ -3,6 +3,7 @@ package com.exydos.usocial;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         loginBTN = findViewById(R.id.LoginBTN);
         registrarBTN = findViewById(R.id.RegistrarBTN);
 
+        CambioDeLetra();
+
         loginBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,5 +35,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, Registro.class));
             }
         });
+    }
+
+    private void CambioDeLetra(){
+        //FUENTE DE LA LETRA
+        String ubicacion = "fuentes/sans_medio.ttf";
+        Typeface tf = Typeface.createFromAsset(MainActivity.this.getAssets(),ubicacion);
+        //FUENTE DE LA LETRA
+
+        loginBTN.setTypeface(tf);
+        registrarBTN.setTypeface(tf);
     }
 }
