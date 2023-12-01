@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class PantallaDeCarga extends AppCompatActivity {
@@ -15,6 +17,13 @@ public class PantallaDeCarga extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pantalla_de_carga);
+
+        //TOOLBAR
+        TextView title = findViewById(R.id.toolbar_title);
+        ImageView leftIcon = findViewById(R.id.left_icon);
+        leftIcon.setVisibility(View.GONE);
+        title.setText("USOcial");
+        //TOOLBAR
 
         app_name = findViewById(R.id.app_name);
         desarrolladorestxt = findViewById(R.id.desarrolladortxt);

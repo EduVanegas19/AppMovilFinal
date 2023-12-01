@@ -66,5 +66,15 @@
     <string name="Actualizar">Actualizar Datos</string>
     <string name="ActualizarPass">Actualizar Pass</string>
 
+    <!--CAMBIO DE CONTRASENA-->
+    <string name="MisCredencialesTXT">Mis Credenciales</string>
+    <string name="CorreoActualTXT">Actual: </string>
+    <string name="CorreoActual"> -- </string>
+    <string name="PassActualTXT">Contrasena actual: </string>
+    <string name="PassActual"> -- </string>
+    <string name="ActualPassET">Contrasena actual</string>
+    <string name="NuevoPassET">Nueva contrasena</string>
+    <string name="CAMBIARPSSBTN">CAMBIAR CONTRASENA</string>
+    <string name="NotaTXT">Nota: Si cambia de contrasena, se procede a cerrar sesion automaticmaente</string>
 
 </resources>

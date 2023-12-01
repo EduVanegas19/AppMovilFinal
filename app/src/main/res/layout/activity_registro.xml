@@ -7,30 +7,37 @@
     android:background="#fff"
     tools:context=".Registro">
 
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar" />
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:padding="10dp">
+
 
         <!--TITULO-->
         <TextView
             android:id="@+id/RegistroTXT"
-            android:text="@string/RegistroTXT"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:textColor="#000"
-            android:gravity="center"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="@string/RegistroTXT"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <!--IMAGEN-->
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginTop="10dp"
             android:layout_gravity="center"
-            android:src="@drawable/usocial"/>
+            android:layout_marginTop="10dp"
+            android:src="@drawable/usocial" />
 
         <!--CORREO-->
         <com.google.android.material.textfield.TextInputLayout
@@ -40,12 +47,12 @@
 
             <EditText
                 android:id="@+id/CORREO"
-                android:hint="@string/CORREO"
-                android:inputType="textEmailAddress"
-                android:textColorHint="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:importantForAutofill="no"/>
+                android:hint="@string/CORREO"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#000" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -56,12 +63,12 @@
 
             <EditText
                 android:id="@+id/Password"
-                android:hint="@string/Password"
-                android:inputType="textPassword"
-                android:textColorHint="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:importantForAutofill="no" />
+                android:hint="@string/Password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:textColorHint="#000" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -72,12 +79,12 @@
 
             <EditText
                 android:id="@+id/NOMBRES"
-                android:hint="@string/NOMBRES"
-                android:inputType="textCapWords|textAutoCorrect"
-                android:textColorHint="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:importantForAutofill="no"/>
+                android:hint="@string/NOMBRES"
+                android:importantForAutofill="no"
+                android:inputType="textCapWords|textAutoCorrect"
+                android:textColorHint="#000" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -88,12 +95,12 @@
 
             <EditText
                 android:id="@+id/APELLIDOS"
-                android:hint="@string/APELLIDOS"
-                android:inputType="textCapWords|textAutoCorrect"
-                android:textColorHint="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:importantForAutofill="no"/>
+                android:hint="@string/APELLIDOS"
+                android:importantForAutofill="no"
+                android:inputType="textCapWords|textAutoCorrect"
+                android:textColorHint="#000" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -104,12 +111,12 @@
 
             <EditText
                 android:id="@+id/EDAD"
-                android:hint="@string/EDAD"
-                android:textColorHint="#000"
-                android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:importantForAutofill="no"/>
+                android:hint="@string/EDAD"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColorHint="#000" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -120,12 +127,12 @@
 
             <EditText
                 android:id="@+id/TELEFONO"
-                android:hint="@string/TELEFONO"
-                android:textColorHint="#000"
-                android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:importantForAutofill="no"/>
+                android:hint="@string/TELEFONO"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColorHint="#000" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -136,24 +143,24 @@
 
             <EditText
                 android:id="@+id/DIRECCION"
-                android:hint="@string/DIRECCION"
-                android:inputType="textCapWords|textAutoCorrect"
-                android:textColorHint="#000"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:importantForAutofill="no" />
+                android:hint="@string/DIRECCION"
+                android:importantForAutofill="no"
+                android:inputType="textCapWords|textAutoCorrect"
+                android:textColorHint="#000" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <!--REGFISTRAR USUARIO-->
         <Button
             android:id="@+id/REGISTRARUSUARIO"
-            android:text="@string/REGISTRARUSUARIO"
-            android:background="@drawable/boton_personalizado"
-            android:textColor="#fff"
-            android:layout_marginTop="15sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:background="@drawable/boton_personalizado"
+            android:text="@string/REGISTRARUSUARIO"
+            android:textColor="#fff" />
 
 
     </androidx.appcompat.widget.LinearLayoutCompat>

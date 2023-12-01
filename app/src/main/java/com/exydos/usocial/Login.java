@@ -14,6 +14,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -52,14 +53,17 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        /*
-        ActionBar actionBar = getSupportActionBar();
-        assert actionBar != null; //AFIRMAMOS QUE EL TITULO NO ES NULO
-        actionBar.setTitle("Login");
-        actionBar.setDisplayShowHomeEnabled(true);
-        actionBar.setDisplayHomeAsUpEnabled(true);
-         */
-
+        //TOOLBAR
+        ImageView leftIcon = findViewById(R.id.left_icon);
+        TextView title = findViewById(R.id.toolbar_title);
+        leftIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        title.setText("Login");
+        //TOOLBAR
         inicioSesion = findViewById(R.id.IniciarSesion);
         correoLogin = findViewById(R.id.CorreoLogin);
         passwordLogin = findViewById(R.id.PasswordLogin);

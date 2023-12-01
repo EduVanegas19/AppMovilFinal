@@ -6,12 +6,15 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/logoicono"
+        android:icon="@drawable/usocial"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/logoicono"
+        android:roundIcon="@drawable/usocial"
         android:supportsRtl="true"
         android:theme="@style/Theme.USOcial"
         tools:targetApi="31">
+        <activity
+            android:name=".CambiarPassword.CambiarPassword"
+            android:exported="false" />
         <activity
             android:name=".Opciones.Mis_Datos"
             android:exported="false" />

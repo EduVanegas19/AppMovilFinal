@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.exydos.usocial.Opciones.Mis_Datos;
 import com.google.firebase.auth.FirebaseAuth;
@@ -41,13 +42,12 @@ public class Inicio extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio);
 
-        /*
-        ActionBar actionBar = getSupportActionBar();
-        assert actionBar != null; //AFIRMAMOS QUE EL TITULO NO ES NULO
-        actionBar.setTitle("Inicio");
-        actionBar.setDisplayShowHomeEnabled(true);
-        actionBar.setDisplayHomeAsUpEnabled(true);
-         */
+        //TOOLBAR
+        TextView title = findViewById(R.id.toolbar_title);
+        ImageView leftIcon = findViewById(R.id.left_icon);
+        leftIcon.setVisibility(View.GONE);
+        title.setText("Inicio");
+        //TOOLBAR
         
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseUser = firebaseAuth.getCurrentUser();

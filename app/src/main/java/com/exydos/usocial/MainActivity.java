@@ -7,6 +7,8 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,6 +18,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //TOOLBAR
+        TextView title = findViewById(R.id.toolbar_title);
+        ImageView leftIcon = findViewById(R.id.left_icon);
+        leftIcon.setVisibility(View.GONE);
+        title.setText("USOcial");
+        //TOOLBAR
 
         loginBTN = findViewById(R.id.LoginBTN);
         registrarBTN = findViewById(R.id.RegistrarBTN);

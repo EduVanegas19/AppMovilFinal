@@ -3,12 +3,15 @@ package com.exydos.usocial.Opciones;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.exydos.usocial.CambiarPassword.CambiarPassword;
 import com.exydos.usocial.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -35,13 +38,17 @@ public class Mis_Datos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mis_datos);
 
-        /*
-        ActionBar actionBar = getSupportActionBar();
-        assert actionBar != null; //AFIRMAMOS QUE EL TITULO NO ES NULO
-        actionBar.setTitle("Inicio");
-        actionBar.setDisplayShowHomeEnabled(true);
-        actionBar.setDisplayHomeAsUpEnabled(true);
-         */
+        //TOOLBAR
+        ImageView leftIcon = findViewById(R.id.left_icon);
+        TextView title = findViewById(R.id.toolbar_title);
+        leftIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        title.setText("Mi Perfil");
+        //TOOLBAR
 
         misDatosTXT = findViewById(R.id.MisDatosTXT);
         imagenDato = findViewById(R.id.ImagenDato);
@@ -120,6 +127,13 @@ public class Mis_Datos extends AppCompatActivity {
             }
         });
 
+        actualizarPass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // NOS MANDARA A CAMBIAR LA CONTRASENA
+                startActivity(new Intent(Mis_Datos.this, CambiarPassword.class));
+            }
+        });
     }
 
     private void CambioDeLetra(){

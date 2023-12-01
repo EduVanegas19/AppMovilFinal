@@ -7,11 +7,15 @@
     android:background="#fff"
     tools:context=".Opciones.Mis_Datos">
 
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:orientation="vertical">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar" />
 
         <TextView
             android:id="@+id/MisDatosTXT"
@@ -19,6 +23,7 @@
             android:layout_gravity="center"
             android:textSize="25sp"
             android:textColor="#000"
+            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -35,6 +40,7 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
             android:orientation="horizontal">
 
             <!-- UID -->
@@ -62,6 +68,7 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
             android:orientation="horizontal">
 
             <!-- NOMBRES -->
@@ -89,6 +96,7 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
             android:orientation="horizontal">
 
             <!-- APELLIDOS -->
@@ -116,6 +124,7 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
             android:orientation="horizontal">
 
             <!-- CORREO -->
@@ -142,6 +151,7 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
             android:orientation="horizontal">
 
             <!-- PASSWORD -->
@@ -169,6 +179,7 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
             android:orientation="horizontal">
 
             <!-- EDAD -->
@@ -196,6 +207,7 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
             android:orientation="horizontal">
 
             <!-- DIRECCION -->
@@ -223,6 +235,7 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
             android:orientation="horizontal">
 
             <!-- TELEFONO -->
