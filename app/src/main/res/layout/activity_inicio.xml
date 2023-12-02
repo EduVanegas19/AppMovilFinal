@@ -176,7 +176,7 @@
                      <Button
                         android:id="@+id/MisDatosOpcion"
                         android:text="@string/MisDatosOpcion"
-                        android:background="@drawable/boton_personalizado"
+                        android:background="#485992"
                         android:textColor="#fff"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
@@ -200,7 +200,7 @@
                     <Button
                         android:id="@+id/CrearPublicacionOpcion"
                         android:text="@string/CrearPublicacionOpcion"
-                        android:background="@drawable/boton_personalizado"
+                        android:background="#485992"
                         android:textColor="#fff"
                         android:layout_marginStart="5dp"
                         android:layout_width="match_parent"
@@ -236,7 +236,7 @@
                     <Button
                         android:id="@+id/PublicacionesOpcion"
                         android:text="@string/PublicacionesOpcion"
-                        android:background="@drawable/boton_personalizado"
+                        android:background="#485992"
                         android:textColor="#fff"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
@@ -263,7 +263,7 @@
                     <Button
                         android:id="@+id/UsuarioOpcion"
                         android:text="@string/UsuarioOpcion"
-                        android:background="@drawable/boton_personalizado"
+                        android:background="#485992"
                         android:textColor="#fff"
                         android:layout_marginStart="5dp"
                         android:layout_width="match_parent"
@@ -299,7 +299,7 @@
                     <Button
                         android:id="@+id/ChatsOpcion"
                         android:text="@string/ChatsOpcion"
-                        android:background="@drawable/boton_personalizado"
+                        android:background="#485992"
                         android:textColor="#fff"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
@@ -322,12 +322,12 @@
 
                     <Button
                         android:id="@+id/CerrarSesion"
-                        android:text="@string/CerrarSesion"
-                        android:layout_marginStart="5dp"
-                        android:background="@drawable/boton_personalizado"
-                        android:textColor="#fff"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@color/colorAccent"
+                        android:text="@string/CerrarSesion"
+                        android:textColor="#fff" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
                 <!--CERRAR SESION -->

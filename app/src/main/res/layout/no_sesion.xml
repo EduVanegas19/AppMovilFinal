@@ -39,7 +39,7 @@
             android:id="@+id/ok_no_inicio"
             android:text="@string/ok_no_inicio"
             android:layout_marginTop="10dp"
-            android:background="@drawable/boton_personalizado"
+            android:background="#6E7BA7"
             android:textColor="#fff"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

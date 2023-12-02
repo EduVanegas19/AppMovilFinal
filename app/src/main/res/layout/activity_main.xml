@@ -26,19 +26,19 @@
         <!--BOTON LOGIN-->
         <Button
             android:id="@+id/LoginBTN"
-            android:text="@string/LoginBTN"
-            android:background="@drawable/boton_personalizado"
-            android:textColor="#fff"
-            android:layout_marginTop="40dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="#485992"
+            android:text="@string/LoginBTN"
+            android:textColor="#fffff2" />
 
         <!--BOTON REGISTRO-->
         <Button
             android:id="@+id/RegistrarBTN"
             android:text="@string/RegistrarBTN"
-            android:background="@drawable/boton_personalizado"
-            android:textColor="#fff"
+            android:background="#485992"
+            android:textColor="#fffff2"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

@@ -158,7 +158,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15sp"
-            android:background="@drawable/boton_personalizado"
+            android:background="#6E7BA7"
             android:text="@string/REGISTRARUSUARIO"
             android:textColor="#fff" />
 

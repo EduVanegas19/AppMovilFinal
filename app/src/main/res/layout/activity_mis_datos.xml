@@ -264,7 +264,7 @@
             android:id="@+id/Actualizar"
             android:text="@string/Actualizar"
             android:layout_marginTop="25dp"
-            android:background="@drawable/boton_personalizado"
+            android:background="#6E7BA7"
             android:textColor="#fff"
             android:layout_gravity="center"
             android:drawableStart="@drawable/actualizar_ico"
@@ -277,7 +277,7 @@
         <Button
             android:id="@+id/ActualizarPass"
             android:text="@string/ActualizarPass"
-            android:background="@drawable/boton_personalizado"
+            android:background="#6E7BA7"
             android:textColor="#fff"
             android:layout_gravity="center"
             android:drawableStart="@drawable/actualizar_pass"
